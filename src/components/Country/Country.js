@@ -4,7 +4,7 @@ import './Country.css'
 
 
 const Country = (props) => {
-    const {area, population, capital, name, flags} = props.country
+    const {area, population, region, capital, name, flags} = props.country
     return (
         <div className='country'>
             <img src={flags.png} />
@@ -12,6 +12,7 @@ const Country = (props) => {
             <h4>population : {population}</h4>
             <p>Capital: {capital}</p>
             <p><small>Area : {area}</small></p>
+            <h4>Region: {region}</h4>
             
         </div>
     );
